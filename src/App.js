@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 let input = prompt("How many pairs would you like:");
 
 //Convert input string to a number
-//let parseNum = parseInt(input, 10);
+let parseNum = parseInt(input, 10);
 
 //Array for storing the input
 var numbers = [];
@@ -57,7 +57,7 @@ function App() {
       </div>
       <div>
         <CardButton onShow={() => showAllCards} />
-        <Board />
+        <Board deck={deck} />
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 import React from "react";
 import "./css/Card.css";
 
-function Board() {
+function Board({ deck }) {
   return (
-    <div>
-      <div className="Card" />
-    </div>
+    <>
+      {deck.map((numOfCards) => {
+        return <div className="Card" />;
+      })}
+    </>
   );
 }
 
