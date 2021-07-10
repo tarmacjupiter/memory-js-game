@@ -1,0 +1,13 @@
+.Card {
+  border-style: solid;
+  border: #a7cf7c;
+  background-color: #a7cf7c;
+  height: 132px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 5px;
+  float: left;
+  transition: transform 0.8s;
+  font-size: 3em;
+  padding-top: 30px;
+}

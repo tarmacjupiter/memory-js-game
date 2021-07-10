@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import CardButton from "./components/CardButton";
+import Board from "./components/Board";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //ASK USER FOR AMOUNT OF CARDS
@@ -51,10 +52,13 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <div>
         <Header />
+      </div>
+      <div>
         <CardButton onShow={() => showAllCards} />
-      </header>
+        <Board />
+      </div>
     </div>
   );
 }
