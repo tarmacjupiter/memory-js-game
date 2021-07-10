@@ -4,8 +4,15 @@ import "./css/Card.css";
 function Board({ deck }) {
   return (
     <>
-      {deck.map((numOfCards) => {
-        return <div className="Card" />;
+      {deck.map((numOfCards, index) => {
+        return (
+          <>
+            <div key={index} className="Card">
+              {numOfCards.content}
+            </div>
+            ;
+          </>
+        );
       })}
     </>
   );
