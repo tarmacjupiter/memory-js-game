@@ -38,6 +38,7 @@ let initDeck = numbers
 
 function App() {
   const [deck, setDeck] = useState(initDeck);
+  console.log(initDeck);
 
   function showAllCards() {
     let shownDeck = deck;

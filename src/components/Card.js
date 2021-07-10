@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import Card from "./Card";
 import "./css/Card.css";
 
-function Board({ deck }) {
+function Card({ cardNum }) {
   const [showResults, setShowResults] = useState(false);
   const onClick = () => setShowResults(true);
 
   return (
     <>
-      {deck.map((cardObject, index) => {
-        return <Card cardNum={cardObject.content} />;
-      })}
+      <div className="Card" onClick={onClick}>
+        {showResults ? cardNum : null}
+      </div>
     </>
   );
 }
 
-export default Board;
+export default Card;
